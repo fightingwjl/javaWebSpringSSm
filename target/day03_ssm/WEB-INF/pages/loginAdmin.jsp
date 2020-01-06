@@ -309,17 +309,17 @@
 
     <%--    并排的两列数据显示--%>
     <style>
-        .div-a{ float:left;width:10%;}
-        .div-b{ float:left;width:12.5%;}
-        .div-h{ float:left;width:12.5%;}
-        .div-i{ float:left;width:12.5%;}
-        .div-c{ float:left;width:50%;}
-        .div-c1{ float:left;width:40%;}
-        .div-c2{ float:left;width:40%;}
-        .div-c3{ float:left;width:20%;}
-        .div-d{ float:left;clear: both; width: 100%}
-        .div-page{ float:left;width:50%;}
-    </style>
+    .div-a{ float:left;width:10%;}
+    .div-b{ float:left;width:12.5%;}
+    .div-h{ float:left;width:12.5%;}
+    .div-i{ float:left;width:12.5%;}
+    .div-c{ float:left;width:50%;}
+    .div-c1{ float:left;width:40%;}
+    .div-c2{ float:left;width:40%;}
+    .div-c3{ float:left;width:20%;}
+    .div-d{ float:left;clear: both; width: 100%}
+    .div-page{ float:left;width:50%;}
+</style>
 
     <style>
         .div-aStaff{ float:left;width:6.1%;}
@@ -339,12 +339,11 @@
 
         <div id="site_title">
             <h1><a href="http://sc.chinaz.com" target="_parent">
-                Wooden
-                <span>free css template</span>
+                人事管理系统
             </a></h1>
         </div>
 
-        <div id="twitter"><a href="#">Follow Me</a></div>
+        <div id="twitter"><a href="#"></a></div>
 
     </div> <!-- end of templatemo_site_title_bar -->
 </div> <!-- end of templatemo_site_title_bar_wrapper -->
@@ -424,11 +423,12 @@
                                 </form>
                             </div>
                                 <div class="div-d"  >
-                                    <c:forEach begin="0" end="5">
+                                    <c:forEach begin="0" end="4">
                                         <br/>
                                     </c:forEach>
-                                        <a style="float: left; width: 50%" href="#2" class="cross-link" title="Go to Page 2">Next Page &#187;</a>
-                                        <a href="toAdvice"  style="float: left; width: 50%;">点击这里可以去员工意见页面</a>
+                                        <a href="toMoreLogin" style="font-size: 15px">点击查看更多</a><br/>
+                                        <a style="float: left; width: 50%; font-size: 15px" href="#2" class="cross-link" title="Go to Page 2">Next Page &#187;</a>
+                                        <a href="toAdvice"  style="float: left; width: 50%;font-size: 15px">点击这里可以去员工意见页面</a>
                             </div>
 
                         </div>
@@ -500,6 +500,7 @@
                                     <h3>删除账户</h3>
                                     <div class="div-c1">
                                         <label >员工号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
+                                        <br/><br/><br/><a href="toMoreStaff" style="font-size: 15px">点击查看更多</a>
                                     </div>
                                     <div class="div-c3">
                                         <input style="font-weight: bold;"  type="button" onclick="loginS3()"  value=" 确认 " />
@@ -577,11 +578,12 @@
                                     ${listwage.wactual} <br/>
                                 </c:forEach>
                             </div>
+
                             <div class="div-c">
                                 <form id="formW1" οnsubmit="return true" action="##" method="post">
                                     <h3>修改账户工资信息</h3>
                                     <div class="div-c1">
-                                        <label >工号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
+                                        <label >工&emsp;&emsp;号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
                                         <br/><br/><label >扣除工资:</label> <input type="text" style="width: 80px" name="Wpenalty" class="required input_field" />
                                     </div>
                                     <div class="div-c2">
@@ -596,7 +598,7 @@
                                 <form id="formW2" οnsubmit="return true" action="##" method="post">
                                     <br/><br/><h3>添加账户工资信息</h3>
                                     <div class="div-c1">
-                                        <label >工号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
+                                        <label >工&emsp;&emsp;号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
                                         <br/><br/><label >扣除工资:</label> <input type="text" style="width: 80px" name="Wpenalty" class="required input_field" />
                                     </div>
                                     <div class="div-c2">
@@ -611,7 +613,7 @@
                                 <form id="formW3" οnsubmit="return true" action="##" method="post">
                                     <br/><br/><h3>删除账户工资信息</h3>
                                     <div class="div-c1">
-                                        <label >员工号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
+                                        <label >工&emsp;&emsp;号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
                                     </div>
                                     <div class="div-c3">
                                         <input style="font-weight: bold;"  type="button" onclick="loginW3()"  value=" 确认 " />
@@ -619,10 +621,16 @@
                                 </form>
                             </div>
                             <div class="div-d"  >
-                                <c:forEach begin="0" end="1">
-                                    <br/>
-                                </c:forEach>
-                                <p><a s href="#2" class="cross-link" title="Go to Page 2">&#171; Previous Page</a> | <a href="#4" class="cross-link" title="Go to Page 4">Next Page &#187;</a></p>
+                                <a href="toMoreWage" style="font-size: 15px">点击查看更多</a><br/>
+<%--                                <c:forEach begin="0" end="1">--%>
+<%--                                    <br/>--%>
+<%--                                </c:forEach>--%>
+                                <div class="div-page">
+                                    <p><a s href="#2" class="cross-link" title="Go to Page 2">&#171; Previous Page</a> | <a href="#4" class="cross-link" title="Go to Page 4">Next Page &#187;</a></p>
+                                </div>
+                                <div class="div-page">
+                                    <a href="toAdvice"  >点击这里可以去员工意见页面</a>
+                                </div>
                             </div>
 
 
@@ -656,7 +664,7 @@
                                 <form id="formC1" οnsubmit="return true" action="##" method="post">
                                     <h3>修改账户考勤信息</h3>
                                     <div class="div-c1">
-                                        <label >工号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
+                                        <label >工&emsp;&emsp;号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
                                         <br/><br/><label >全勤天数:</label> <input type="text" style="width: 80px" name="Cregular" class="required input_field" />
                                     </div>
                                     <div class="div-c2">
@@ -671,7 +679,7 @@
                                 <form id="formC2" οnsubmit="return true" action="##" method="post">
                                     <br/><br/><h3>添加账户考勤信息</h3>
                                     <div class="div-c1">
-                                        <label >工号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
+                                        <label >工&emsp;&emsp;号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
                                         <br/><br/><label >全勤天数:</label> <input type="text" style="width: 80px" name="Cregular" class="required input_field" />
                                     </div>
                                     <div class="div-c2">
@@ -686,7 +694,7 @@
                                 <form id="formC3" οnsubmit="return true" action="##" method="post">
                                     <br/><br/><h3>删除账户考勤信息</h3>
                                     <div class="div-c1">
-                                        <label >员工号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
+                                        <label >工号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
                                     </div>
                                     <div class="div-c3">
                                         <input style="font-weight: bold;"  type="button" onclick="loginC3()"  value=" 确认 " />
@@ -694,13 +702,17 @@
                                 </form>
                             </div>
                             <div class="div-d"  >
-                                <c:forEach begin="0" end="1">
-                                    <br/>
-                                </c:forEach>
-                                <p><a s href="#3" class="cross-link" title="Go to Page 3">&#171; Previous Page</a> | <a href="#5" class="cross-link" title="Go to Page 5">Next Page &#187;</a></p>
+                                <a href="toMoreCheck" style="font-size: 15px">点击查看更多</a><br/>
+<%--                                <c:forEach begin="0" end="1">--%>
+<%--                                    <br/>--%>
+<%--                                </c:forEach>--%>
+                                <div class="div-page">
+                                    <p><a s href="#3" class="cross-link" title="Go to Page 3">&#171; Previous Page</a> | <a href="#5" class="cross-link" title="Go to Page 5">Next Page &#187;</a></p>
+                                </div>
+                                <div class="div-page">
+                                    <a href="toAdvice"  >点击这里可以去员工意见页面</a>
+                                </div>
                             </div>
-
-
                         </div>
                     </div>
                     <div class="panel" title="Department">
@@ -727,6 +739,7 @@
                                     ${listdepart.sno} <br/>
                                 </c:forEach>
                             </div>
+
                             <div class="div-c">
                                 <form id="formD1" οnsubmit="return true" action="##" method="post">
                                     <h3>修改部门信息</h3>
@@ -748,10 +761,10 @@
                                     <br/><br/><h3>添加部门</h3>
                                     <div class="div-c1">
                                         <label >经理号:</label> <input type="text" style="width: 80px" name="Sno" class="required input_field" />
-                                        <br/><br/><label >经理名称:</label> <input type="text" style="width: 80px" name="Sname" class="required input_field" />
+                                        <br/><br/><label >部门号:</label> <input type="text"  style="width: 80px" name="Dno" class="required input_field" />
                                     </div>
                                     <div class="div-c2">
-                                        <label >部门号:</label> <input type="text"  style="width: 80px" name="Dno" class="required input_field" />
+                                        <label >经理名称:</label> <input type="text" style="width: 80px" name="Sname" class="required input_field" />
                                         <br/><br/><label >部门名称:</label> <input type="text"  style="width: 80px" name="Dname" class="required input_field" />
                                     </div>
                                     <div class="div-c3">
@@ -770,10 +783,18 @@
                                 </form>
                             </div>
                             <div class="div-d"  >
-                                <c:forEach begin="0" end="1">
-                                    <br/>
-                                </c:forEach>
-                                <p><a s href="#4" class="cross-link" title="Go to Page 4">&#171; Previous Page</a>
+                                <a href="toMoreDepart" style="font-size: 15px">点击查看更多</a><br/>
+<%--                                <c:forEach begin="0" end="1">--%>
+<%--                                    <br/>--%>
+<%--                                </c:forEach>--%>
+                                <div class="div-page">
+                                    <p><a s href="#4" class="cross-link" title="Go to Page 4">&#171; Previous Page</a>
+                                </div>
+                                <div class="div-page">
+                                    <a href="toAdvice"  >点击这里可以去员工意见页面</a>
+                                </div>
+                                <br/><br/>
+                                <a href="toLogin" style="font-size: 15px">请点击回到登录页面</a>
                             </div>
                         </div>
                     </div>
@@ -795,9 +816,9 @@
 <div id="templatemo_footer_wrapper">
 
     <div id="templatemo_footer">
-        Copyright 漏 2024 <a href="#">Your Company Name</a>
+        “客户第一！”   <a href="#">“用脑、用心去建造！”</a>
         <div class="cleaner_h10"></div>
-        Designed by <a href="http://sc.chinaz.com" target="_parent">cssk8</a>
+        <a href="http://sc.chinaz.com" target="_parent">“放眼世界，努力改进经营管理，发明建筑新技术！” </a>
     </div> <!-- end of templatemo_footer -->
 </div> <!-- end of templatemo_footer_wrapper -->
 <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>  </body>

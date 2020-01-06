@@ -9,7 +9,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-    <title>Wooden Template, Portfolio Website, Free CSS Template此模板 来自站长素材模板sc.chinaz.com</title>
+    <title>人事管理系统</title>
     <meta name="keywords" content="Wooden Template, Portfolio Website, Personal, Free CSS Template, XHTML" />
     <meta name="description" content="Wooden Template, Portfolio Website, Free CSS Template from cssk8.com" />
     <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
@@ -42,12 +42,11 @@
 
         <div id="site_title">
             <h1><a href="http://sc.chinaz.com" target="_parent">
-                Wooden
-                <span>free css template</span>
+                人事管理系统
             </a></h1>
         </div>
 
-        <div id="twitter"><a href="#">Follow Me</a></div>
+        <div id="twitter"><a href="#"></a></div>
 
     </div> <!-- end of templatemo_site_title_bar -->
 </div> <!-- end of templatemo_site_title_bar_wrapper -->
@@ -64,11 +63,10 @@
                 <div class="panelContainer">
                     <div class="panel" title="Login">
                         <div class="wrapper">
+                            <br/><br/><br/>
                             <h2>用户登录</h2>
                             <div id="contact_form">
-                                <br/> <br/>
                                 <form action="login/login" method="post">
-
                                     <label for="Sno">账号:</label> <input type="text" id="Sno" name="Sno" class="required input_field" />
                                     <div class="cleaner_h10"></div>
 
@@ -107,9 +105,9 @@
 <div id="templatemo_footer_wrapper">
 
     <div id="templatemo_footer">
-        Copyright 漏 2024 <a href="#">Your Company Name</a>
+        “客户第一！”   <a href="#">“用脑、用心去建造！”</a>
         <div class="cleaner_h10"></div>
-        Designed by <a href="http://sc.chinaz.com" target="_parent">cssk8</a>
+        <a href="http://sc.chinaz.com" target="_parent">“放眼世界，努力改进经营管理，发明建筑新技术！” </a>
     </div> <!-- end of templatemo_footer -->
 </div> <!-- end of templatemo_footer_wrapper -->
 <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>  </body>

@@ -42,12 +42,12 @@
 
         <div id="site_title">
             <h1><a href="http://sc.chinaz.com" target="_parent">
-                Wooden
-                <span>free css template</span>
+                人事管理系统
+
             </a></h1>
         </div>
 
-        <div id="twitter"><a href="#">Follow Me</a></div>
+        <div id="twitter"><a href="#"></a></div>
 
     </div> <!-- end of templatemo_site_title_bar -->
 </div> <!-- end of templatemo_site_title_bar_wrapper -->
@@ -90,9 +90,9 @@
 <div id="templatemo_footer_wrapper">
 
     <div id="templatemo_footer">
-        Copyright 漏 2024 <a href="#">Your Company Name</a>
+        “客户第一！”   <a href="#">“用脑、用心去建造！”</a>
         <div class="cleaner_h10"></div>
-        Designed by <a href="http://sc.chinaz.com" target="_parent">cssk8</a>
+        <a href="http://sc.chinaz.com" target="_parent">“放眼世界，努力改进经营管理，发明建筑新技术！” </a>
     </div> <!-- end of templatemo_footer -->
 </div> <!-- end of templatemo_footer_wrapper -->
 <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>  </body>

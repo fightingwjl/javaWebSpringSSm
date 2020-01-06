@@ -405,4 +405,48 @@ public class LoginController {
             return depart;
         }
     }
+
+
+
+    //向更多页面跳转
+    @RequestMapping("/toMoreLogin")
+    public String toMoreLogin(Model model){
+        System.out.println("准备去账户更多页面");
+        List<Login> listMoreLogin = loginService.findAll();
+        model.addAttribute("MLogin",listMoreLogin);
+        return "MoreLogin";
+    }
+
+    @RequestMapping("/toMoreStaff")
+    public String toMoreStaff(Model model){
+        System.out.println("准备去员工更多页面");
+        List<Staff> listMoreStaff = staffService.findAll();
+        model.addAttribute("MStaff",listMoreStaff);
+        return "MoreStaff";
+    }
+
+    @RequestMapping("/toMoreWage")
+    public String toMoreWage(Model model){
+        System.out.println("准备去工资更多页面");
+        List<Wage> listMoreWage = wageService.findAll();
+        model.addAttribute("MWage",listMoreWage);
+        return "MoreWage";
+    }
+
+    @RequestMapping("/toMoreCheck")
+    public String toMoreCheck(Model model){
+        System.out.println("准备去考勤更多页面");
+        List<Check1> listMoreCheck1 = check1Service.findAll();
+        model.addAttribute("MCheck",listMoreCheck1);
+        return "MoreCheck";
+    }
+
+    @RequestMapping("/toMoreDepart")
+    public String toMoreDepart(Model model){
+        System.out.println("准备去部门更多页面");
+        List<Depart> listMoreDepart = departService.findAll();
+        model.addAttribute("MDepart",listMoreDepart);
+        return "MoreDepart";
+    }
+
 }
